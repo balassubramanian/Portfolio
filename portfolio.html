@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" type="image/png" href="favicon2.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script>
+        document.getElementById("button1").onclick = function() {resumeDisplay()};
+        
+        function resumeDisplay() {
+            window.open("Resume.pdf", "_blank");
+        }
+        </script>
+
+    <style>
+           html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+            background-color: #CEDBE9;
+        }
+        #Header {
+            background-color: #CEDBE9;
+            height: 65vh;
+            width: 100%;
+        }
+        
+        #second {
+            background-color: white;
+            height: 90vh;
+            width: 100%;
+        }
+
+        #third {
+            background-color: #CEDBE9;
+            height: 90vh;
+            width: 100%;
+        }
+
+
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 11ch; }
+        }
+
+        @keyframes blink {
+            from { border-color: transparent }
+            to { border-color: orange; }
+        }
+
+        @keyframes fade-in{
+            from { scale: .8; opacity: 0;}
+            to { scale: 1; opacity: 1;}
+        }
+
+        #h1 {
+            overflow: hidden;
+            border-right: .15em solid orange;
+            font-size: 35;
+            width: 0;
+            white-space: nowrap;
+            padding-left: 80px;
+            animation:
+            typing 3s steps(13, end) forwards,
+            blink .8s infinite;
+            font-family: Helvetica;
+        }
+
+        #Header2 {
+           
+            font-size: 45px;
+            display: inline-block;
+            margin-left: 250px;
+            margin-top: 180px;
+            margin-right: 250px;
+            font-family: Helvetica;
+        }
+
+        .button {
+            border-radius: 12px;
+            margin-top: 20px; 
+            padding: 12px 28px;
+            background-color: #0049ad;
+            border: none; 
+            transition-duration: 0.4s;
+            color: white;
+            font-family: Helvetica;
+            margin-left: 250px;
+            margin-top: 100px;
+        }
+
+        .button:hover {
+            opacity: 0.5;
+        }
+
+        .work-items{
+            display: flex;
+            justify-content: space-around;
+            margin:20px 0;
+        }
+
+        .work-item{
+            text-align: center;
+        }
+
+        .work-item img{
+            width:150px;
+            height: 150px;
+            display: block;
+            margin: 0 auto;
+            animation: fade-in linear;
+            animation-timeline: view();
+            animation-range-end: 600px;
+        }
+
+        .work-item p {
+            margin-top: 10px;
+            font-size: 18px;
+            margin-left: 250px;
+            margin-right: 10%;
+            font-family: Calibri;
+            text-align: left;
+            animation: fade-in linear;
+            animation-timeline: view();
+            animation-range-end: 600px;
+        }
+
+        
+        #Headingdesc{
+            font-family: Helvetica;
+            font-size:45px;
+            display: inline-block;
+            margin-left: 250px;
+            margin-top: 180px;
+            margin-right: 250px;
+        }
+
+        a {
+            font-family: Helvetica;
+            font-size: 15px;
+            margin-top: 250px;
+            margin-left: 250px;
+        }
+    </style>
+    <title>Bala's Portfolio</title>
+</head>
+
+
+<body>
+    <div id="Header">
+        <h1 id="h1">My Portfolio.</h1>
+        <img src="logo.png" style="width:50px;height:50px;position: absolute;top:10px;left:10px">
+        <p id="Headingdesc">Crafting Secure and Intelligent Solutions: Harnessing AI, Machine Learning, and Design to Drive Innovation and Excellence</p>
+        <a href="mailto:bsriniv@gmu.edu">bsriniv3@gmu.edu</a>
+        <br>
+        <button type="button" class="button" id="button1">Resume</button>
+    </div>
+
+    
+    <div id="second">
+        <p id="Header2">Work Experience</h1>
+        <br>
+        <div class="work-items">
+
+            <div class="work-item">
+                <img src="kpmg.png" >
+                <br>
+                <p> <span style="font-family: serif;font-size: 15px;">Mumbai, India</span><br>
+                    <br>
+                    Conducted IT audits for over 20 PCAOB clients, including Tata Motors and Sudharshan Chemicals, defining and testing ITGC and ITAC. Collaborated with KPMG on IT framework improvements for Shiseido and Accenture. Developed automation tools using UiPath, C#, and VB Script for SAP, enhancing audit reporting efficiency.
+                </p>
+            </div>
+
+            <div class="work-item">
+                <img src="utd.jpg" >
+                <br>
+                <p><span style="font-family: serif;font-size: 15px;">Dallas, Texas</span><br>
+                    <br>
+                    Devised an algorithm for pneumonia detection in medical imagery with 95% accuracy using advanced preprocessing, feature extraction, and convolutional neural networks. Developed high-precision NLP models for handwritten text recognition, achieving 98% accuracy through innovative model architecture.
+                </p>            
+            </div>
+
+            <div class="work-item">
+                <img src="kgisl.png" style="padding-left: 80px;">
+                <br>
+                <p ><span style="font-family: serif;font-size: 15px;">Coimbatore, India</span><br>
+                    <br>
+                     Programmed an Invoice Reader using C++, Python, OpenCV, Scikit-Learn, and Pandas, leveraging deep learning neural networks to extract information from readable and non-readable invoices, autonomously categorizing the extracted information into appropriate labels. 
+                </p> 
+            </div>
+        </div>
+    </div>
+    
+    <div id="third">
+
+    </div>
+</body>
+</html>
