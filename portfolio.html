@@ -3,15 +3,6 @@
 <head>
     <link rel="icon" type="image/png" href="favicon2.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <script>
-        document.getElementById("button1").onclick = function() {resumeDisplay()};
-        
-        function resumeDisplay() {
-            window.open("Resume.pdf", "_blank");
-        }
-        </script>
-
     <style>
            html, body {
             margin: 0;
@@ -34,6 +25,12 @@
 
         #third {
             background-color: #CEDBE9;
+            height: 120vh;
+            width: 100%;
+        }
+
+        #fourth {
+            background-color: whitesmoke;
             height: 90vh;
             width: 100%;
         }
@@ -142,6 +139,48 @@
             margin-top: 250px;
             margin-left: 250px;
         }
+
+        .quotes-container {
+            margin-left: 250px;
+            position: relative;
+            width: 80%;
+            overflow: hidden;
+            padding: 10px;
+        }
+
+        .quotes-wrapper {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .quote {
+            min-width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            background: whitesmoke;
+            font-family: 'George';
+            font-size: 40px;
+        }
+        .nav-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            user-select: none;
+            z-index: 1;
+        }
+
+        .left-btn {
+            left: 10px;
+        }
+
+        .right-btn {
+            right: 10px;
+        }
     </style>
     <title>Bala's Portfolio</title>
 </head>
@@ -159,7 +198,7 @@
 
     
     <div id="second">
-        <p id="Header2">Work Experience</h1>
+        <p id="Header2">Work Experience
         <br>
         <div class="work-items">
 
@@ -193,7 +232,165 @@
     </div>
     
     <div id="third">
+        <p id="Header2">Projects</p>
+        <br>
+        <div class="work-items">
 
+            <div class="work-item">
+                <h2>IMDB REVIEW RATING - SENTIMENT ANALYSIS</h2>
+                <p> 
+                    <br>
+                    Utilized Apache Spark for data cleaning and machine learning models for sentiment analysis of IMDb reviews. Optimized models with cross-validation, identified top reviewers by net helpfulness scores, and used data visualization to highlight trends and insights on community engagement and content quality.
+                </p>
+            </div>
+
+            <div class="work-item">
+                <h2>ANALYSIS OF MACHINE LEARNING APPROACHES FOR MUSIC GENRE CLASSIFICATION</h2>
+                <p>
+                    <br>
+                    Developed a Multi-Modal Music Genre Classification System using TensorFlow, PySpark, SVM, and NLP models. Improved genre classification accuracy through comprehensive data analysis and visualization, including Box plots, Heat maps, and T-SNE, to demonstrate balanced dataset distributions and audio feature correlations.
+                </p>            
+            </div>
+
+            <div class="work-item">
+                <h2>AUTISM SPECTRUM DISORDER DETECTION</h2>
+                <p >
+                    <br>
+                    Developed an advanced detection system using machine learning algorithms. Proficient in data analysis and model development with Python libraries (numpy, pandas, sklearn, keras). Applied various ML techniques, including Random Forest, Decision Trees, Naive Bayes, Logistic Regression, SVC, and Gradient Boosting, to handle multivariate datasets and perform classification tasks.
+                </p> 
+            </div>
+        </div>
+
+        <div class="work-items">
+            <div class="work-item">
+                <h2 style="margin-left: 250px; ">COMPARISION OF LSTM AND ARIMA FOR STOCK MARKET PREDICTION</h2>
+                <p> 
+                    <br>
+                    Led a team in developing LSTM and ARIMA models for stock market prediction. Utilized 10 years of FAANG data, applying comprehensive statistical and mathematical analysis. Achieved 85% accuracy with the ARIMA model, demonstrating significant profitability potential and a deep understanding of market dynamics.
+                </p>
+            </div>
+
+            <div class="work-item">
+                <h2>AUTONOMOUS DRONE</h2>
+                <p>
+                    <br>
+                    Designed and developed an autonomous drone for obstacle-free navigation. Led a team to implement a YOLO-based object detection model, integrating it into the drone's system. This enhanced the drone's autonomous capabilities, demonstrating proficiency in computer vision and AI technologies.
+                </p>            
+            </div>
+
+            <div class="work-item">
+                <h2>LIBRARY MANAGEMENT SYSTEM</h2>
+                <p >
+                    <br>
+                    Led full stack development of an iOS and web-based Library Management System. Enhanced user experience with a user-friendly UI for efficient check-in and check-out operations, and ensured robust back-end functionality using Firebase for real-time database management.
+                </p> 
+            </div>
+        </div>
     </div>
+
+    <div id="fourth">
+        <p id="Header2">References</p>
+        <br>
+        <div class="quotes-container">
+            <div class="quotes-wrapper">
+                <div class="quote">"Bala's blend of technical expertise, innovative spirit, and collaborative ethos positions him as an outstanding candidate for any role that seeks to harness the transformative power of technology."<br>
+                    <span style="font-family: Arial;font-size: 24px;display: block; text-align: right;">- Professor Zhu Ziwei</span>
+                    <span style="font-family: Arial;font-size: 20px;display: block; text-align: right;"><br> Associate Professor at George Mason University</span><br>
+                <button type="button">Resume</button></div>
+                <div class="quote">"Bala is extremely competent and resilient, diligently performing difficult tasks and taking full responsibility to complete 'unpopular' shifts. He is very organized, learns quickly, and demonstrates competence with executing tasks with little to no direct oversight."<br>
+                    <span style="font-family: Arial;font-size: 24px;display: block; text-align: right;">- Alexandra Swords</span>
+                    <span style="font-family: Arial;font-size: 20px;display: block; text-align: right;">Production Supervisor at George Mason University</span><br>
+                <button type="button">Resume</button></div>
+                <div class="quote">"Experience of working with Bala was so fulfilling! He is very organised & meticulously gets things done! A very quick learner & highly reliable! "<br>
+                    <span style="font-family: Arial;font-size: 24px;display: block; text-align: right;">- John Allan</span>
+                    <span style="font-family: Arial;font-size: 20px;display: block; text-align: right;">Production Supervisor at George Mason University</span><br>
+                <button type="button">Resume</button></div>
+                <div class="quote">"I worked with Bala while he was working for KPMG India. Bala is a very hard working individual who meets deadlines on time. I have had a pleasure working with him and I believe he would make a great addition to any team!"<br>
+                    <span style="font-family: Arial;font-size: 24px;display: block; text-align: right;">- Anjiya Fazlani</span>
+                    <span style="font-family: Arial;font-size: 20px;display: block; text-align: right;">Associate at KPMG USA</span><br>
+                <button type="button">Resume</button></div>
+            </div>
+            <button class="nav-btn left-btn">&#10094;</button>
+            <button class="nav-btn right-btn">&#10095;</button>
+        </div>
+
+            <script>var quotes = [
+                "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.<br><br>- Helen Keller",
+                "Try to be a rainbow in someone's cloud.<br><br>- Maya Angelou",
+                "Never believe that a few caring people can't change the world. For, indeed, that's all who ever have.<br><br>- Margaret Mead"
+                ];
+                //Set up a counter variable
+                var counter = 0;
+                
+                //Set a timer function, 9000 = 9000 milliseconds = 9 seconds
+                setInterval(function () {
+                //If the counter falls within the allowed indices of the array...
+                if (counter < quotes.length) {
+                //Set the quote text to the next quote
+                document.getElementById("quoteText").innerHTML = quotes[counter];
+                //Increase the counter
+                counter++;
+                }
+                else{
+                //Otherwise, reset the counter variable
+                counter = 0;
+                }
+                }, 9000);</script>
+    </div>
+
+    <script>
+        document.getElementById("button1").onclick = function() {resumeDisplay()};
+        
+        function resumeDisplay() {
+            window.open("Resume.pdf", "_blank");
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const quotesWrapper = document.querySelector('.quotes-wrapper');
+    const quotes = document.querySelectorAll('.quote');
+    const leftBtn = document.querySelector('.left-btn');
+    const rightBtn = document.querySelector('.right-btn');
+    
+    let index = 0;
+    let autoScrollInterval;
+
+    const showQuote = (idx) => {
+        quotesWrapper.style.transform = `translateX(${-idx * 100}%)`;
+    }
+
+    const nextQuote = () => {
+        index = (index + 1) % quotes.length;
+        showQuote(index);
+    }
+
+    const prevQuote = () => {
+        index = (index - 1 + quotes.length) % quotes.length;
+        showQuote(index);
+    }
+
+    const startAutoScroll = () => {
+        autoScrollInterval = setInterval(nextQuote, 9000); // Change quote every 3 seconds
+    }
+
+    const resetAutoScroll = () => {
+        clearInterval(autoScrollInterval);
+        startAutoScroll();
+    }
+
+    rightBtn.addEventListener('click', () => {
+        nextQuote();
+        resetAutoScroll();
+    });
+
+    leftBtn.addEventListener('click', () => {
+        prevQuote();
+        resetAutoScroll();
+    });
+
+    startAutoScroll();
+});
+
+        </script>
 </body>
 </html>
+
